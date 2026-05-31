@@ -1,0 +1,7 @@
+gcc -c -Wall -pedantic -std=c99 -O2 xmalloc.c
+gcc -c -Wall -pedantic -std=c99 -O2 xmalloc.c
+gcc -c -Wall -pedantic -std=c99 -O2 xmalloc.c
+gcc -c -Wall -pedantic -std=c99 -O2 xmalloc-demo-1.c 
+gcc -c -Wall -pedantic -std=c99 -O2 xmalloc-demo-2.c 
+gcc xmalloc.o xmalloc-demo-1.o -o xmalloc-demo-1
+gcc xmalloc.o xmalloc-demo-2.o -o xmalloc-demo-2

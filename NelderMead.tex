@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb, amsmath, amsthm,graphicx,multicol,amsfonts}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\DD}{\mathbb{D}}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\ann}{ann} %Annihilator
+\DeclareMathOperator{\Span}{Span}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\RRn}{\mathbb{R}^n}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\In}{{i_1,\dots,i_N}}
+\newcommand{\eL}{\emph{Lyapunov}}
+\newcommand{\inv}[1]{{#1}^{-1}}
+\newcommand{\knot}[1]{{#1}_{\circ}}
+\newcommand{\Star}[1]{{#1}^{*}}
+\newcommand{\ver}[2]{{#1}^{(#2)}}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\makeatother
+
+\begin{document}
+	\begin{definition}
+		\textbf{Simplex} Given n linearly independent vectors connect each of the end points to get n+1 vertecies.
+	\end{definition}
+
+Given a simplex in $ \RRn $ let $ \ver{x}{0},\ver{x}{1},\dots,\ver{x}{n} $ denote the verticies. Let $ y_i=f(\ver{x}{i}) $ for $ i=1\dots n.$ Denote $ y_{iz} $ as the farthest away from the minimum, $ y_{iy} $ as the second farthest, and $ y_{ia}$ is the closest to the minimum. Notice the indicies may not be uniquely determined, but we want $ ia\neq iy,\; iy\neq iz,\text{ and } iz \neq ia. $ We call $ y_{ia}=\min_i y_i $, $y_{iz}=\max_{i} y_i$, $y_{iy}=\max_{i \neq z} y_i.$  
+
+\begin{definition}
+	\text{centroid} denoted as $ \hat{x}=\frac{1}{n}\sum_{i=0}^{n} \ver{x}{i} $ for $ i\neq iz $.
+\end{definition}
+
+We denote $ \ver{x}{r} $ as the the reflextion and $ \ver{x}{e} $ as the extension. 
+	
+\end{document}

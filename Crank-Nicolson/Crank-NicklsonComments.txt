@@ -1,0 +1,7 @@
+Hello Amarit, your crank-nicolson.c work well, but the flow
+of logic in heat-explicit.c is quite messed up.  Perhaps it
+may be possible to salvage things by rearranging the lines
+in a sensible order but I haven't tried.  Requires a thorough
+reexamination.
+
+Grade for this assignment: "B"
